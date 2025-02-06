@@ -3,12 +3,13 @@
 
 #include "expense_manager.h"
 #include <fstream>
+#include <iostream>
+#include <vector>
 
 class FileHandler {
-    public:
+public:
     static void saveToFile(const ExpenseManager& manager, const std::string& filename);
     static void loadFromFile(ExpenseManager& manager, const std::string& filename);
-
 };
 
-#endif
+#endif // FILE_HANDLER_H
